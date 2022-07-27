@@ -1,0 +1,125 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background: linear-gradient(to left, #8067b7, #6a50a7);
+    flex-basis: 15rem;
+    align-content: center;
+    height: 100vh;
+    color: black;
+    font-size: 1.2rem;
+    border: solid;
+    border-color: #8067b7;
+    border-radius: 10px;
+}
+
+.bars_container {
+    flex: 1;
+    height: 100%;
+    max-width: 100vw;
+    width: 95%;
+    justify-content: center;
+    padding: 20px 0px;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.bar {
+    width: 35px;
+    color: aliceblue;
+    text-align: center;
+    background-color: black;
+    margin: 0 2px;
+    border: solid;
+    border-color: orangered;
+    border-radius: 10px;
+    font-size: 1.5rem;
+}
+
+body {
+    background: linear-gradient(to bottom right, #292239, #6a50a7, #8067b7);
+    display: flex;
+}
+
+.buttons_container>button,
+select,
+.btn__submit {
+    margin-top: 30px;
+    width: 150px;
+    height: 30px;
+    background-color: #292239;
+    border: none;
+    border-radius: 5px;
+    color: rgba(234, 191, 215, 0.99);
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    transition: 0.2s ease-in-out;
+}
+
+button:hover {
+    background-color: #292239b3;
+}
+
+.close-modal {
+    position: absolute;
+    top: 1.2rem;
+    right: 2rem;
+    font-size: 2.5rem;
+    color: #333;
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+.hidden {
+    display: none;
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60vw;
+
+    background-color: #8067b7;
+    padding: 6rem;
+    border-radius: 5px;
+    box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+    z-index: 10;
+
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(3px);
+    z-index: 5;
+}
+
+.modal__form {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+
+}
+
+input {
+    width: 60%;
+    background-color: #c1b5dd;
+    border-radius: 5px;
+    height: 30px;
+    margin: 1rem;
+}

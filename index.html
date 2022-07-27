@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script defer src="index.js"></script>
+  <link rel="stylesheet" href="style.css" />
+  <title>Quick Sort Visualizer</title>
+</head>
+
+<body>
+  <div class="sidebar">
+    <ul class='side-container'>
+      <li>
+        <p>
+        <h1>Sorting Visualizer</h1>
+        <br>
+        <h3>Quick Sort</h3>
+        <br>
+        </p>
+      </li>
+      <li class="buttons_container">
+
+        <label for="slider">Array Size:</label>
+        <br>
+        <select title="size-select" class="size_selecter">
+          <option value="10">10</option>
+          <option value="15">15</option>
+          <option value="20">20</option>
+          <option value="25">25</option>
+          <option value="30">30</option>
+        </select>
+        <button class="show-modal">Manual Input</button>
+        <select title="speed-select" id="speed">
+          <option value="100">Slow</option>
+          <option value="50">Medium</option>
+          <option value="10">Fast</option>
+        </select>
+        <button id="randomize_array_btn">Randomize Array</button>
+        <button id="sort_btn">Sort</button>
+
+        <li />
+    </ul>
+  </div>
+  
+  <div class="bars_container" id="bars_container"></div>
+  <div class="modal hidden">
+    <button class="close-modal">&times;</button>
+    <form class="modal__form">
+      <label>Input the number of elements</label>
+      <input class="number_elements" type="text" />
+      <label>Input the elements<br>(Seperated by spaces)</label>
+      <input class="array_elements" type="text" />
+      <button class="btn__submit">Submit</button>
+    </form>
+  </div>
+  <div class="overlay hidden"></div>
+</body>
+
+</html>
